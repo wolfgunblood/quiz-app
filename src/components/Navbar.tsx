@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import { getAuthSession } from '@/lib/nextauth'
 import SignInButton from './SignInButton'
+import UserAccountNav from './userAccountNav'
 
 type Props = {}
 
@@ -20,7 +21,7 @@ const Navbar = async (props: Props) => {
 
                 <div className='flex items-center'>
                 {session?.user ? (
-                    <p>{session.user.name}</p>
+                    <UserAccountNav user = {session.user} />
                 ) : (
                     <SignInButton text="sign in" />
                 )}
