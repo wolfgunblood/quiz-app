@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { getAuthSession } from '@/lib/nextauth'
 import SignInButton from './SignInButton'
 import UserAccountNav from './userAccountNav'
+import { ModeToggle } from './ThemeToggle'
 
 type Props = {}
 
@@ -20,6 +21,7 @@ const Navbar = async (props: Props) => {
                 </Link>
 
                 <div className='flex items-center'>
+                    <ModeToggle className='mr-4'/>
                 {session?.user ? (
                     <UserAccountNav user = {session.user} />
                 ) : (

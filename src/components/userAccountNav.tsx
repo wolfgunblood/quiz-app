@@ -38,13 +38,13 @@ const userAccountNav = ({ user }: Props) => {
                     <DropdownMenuItem>Subscription</DropdownMenuItem> */}
                     <div className='flex items-center justify-start gap-2 p-2'>
                         <div className='flex flex-col space-y-1 leading-none'>
-                            {user.name && <p className='font-medium'>{user.name}</p>}
+                            {user.name && <p className='font-medium text-black'>{user.name}</p>}
                             {user.email && <p className='w-[200px] text-sm truncate text-zinc-500'>{user.email}</p>}
                         </div>
                     </div>
                     <DropdownMenuSeparator />
                     <DropdownMenuItem asChild>
-                        <Link href="/profile">Meow</Link>
+                        <Link href="/profile" className='font-medium text-black' >Meow</Link>
                     </DropdownMenuItem>
                     <DropdownMenuItem onSelect={(event : any) => {
                         event.preventDefault();
