@@ -20,15 +20,15 @@ const Dashboard = async (props: Props) => {
 
     const session = await getAuthSession();
     
-    if(!session?.user){
-        redirect("/");
-    }
+    // if(!session?.user){
+    //     redirect("/");
+    // }
 
   return (
     <main className='p-8 mx-auto max-w-7xl'>
         <div className='flex items-center'>
             <h1 className='mr-3 text-3xl font-bold tracking-right'>Dashboard</h1>
-            <DetailsDialog />
+            {/* <DetailsDialog /> */}
         </div>
         <div className='grid md:grid-cols-2 gap-4 mt-4'>
             <QuizMeCard />
@@ -36,7 +36,7 @@ const Dashboard = async (props: Props) => {
         </div>
         <div className='grid gap-4 mt-4 md:grid-cols-2 lg:grid-cols-7'>
             <HotTopicCard />
-            <RecentCard />
+            {/* <RecentCard /> */}
         </div>
     </main>
   )
