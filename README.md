@@ -2,7 +2,6 @@
   <h1>AI quiz App</h1>
   <p>🔥 Build using OpenAI</p>
 
-
 </div>
 <br />
 
@@ -27,7 +26,14 @@ This tool is built using these technologies:
 - ⚛️ React 18
 - 🔰 TypeScript
 - 💠 Tailwind CSS 3
--     Next Auth
+- 🗂 Prisma Client
+- 🔥 Next Auth
+- 〰️ SWR
+- ➰ Framer Motion
+- 💢 React Icons
+- 🧿 Absolute Import and Path Alias
+- 📏 ESLint
+- ✨ Prettier
 
 <br />
 
