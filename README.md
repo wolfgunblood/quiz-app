@@ -30,13 +30,13 @@
 
   
 
-This ia an AI quiz generator app.
+This is an AI quiz generator app.
 
 I built this project to hone my full stack skills.
 
   
 
-This app lets you create mcqa and open-end quizzes.
+This app lets you create mcqs and open-end quizzes.
 
 Right now it is on trial basics coz of openai credit.
 
